@@ -1,10 +1,10 @@
 // Продължи с твоя SCSS или обикновен CSS код тук.
-$color-light: #FDF6E6;
-$color-bg-dessert: #FBF4DF;
-$color-main: #9B582E;
-$color-secondary: #CA7111;
+$color-light: #fdf6e6;
+$color-bg-dessert: #fbf4df;
+$color-main: #9b582e;
+$color-secondary: #ca7111;
 $color-alt: #533019;
-$font-serif: 'Noto Serif', serif;
+$font-serif: "Noto Serif", serif;
 
 body {
     background-color: $color-light;
@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    background-image: url('/main-bg.svg');
+    background-image: url("/main-bg.svg");
     background-repeat: space;
     background-position: center 33em;
     background-size: 100%;
@@ -24,7 +24,7 @@ nav {
     width: 97.5vw;
     margin: 0;
     padding: 0;
-    gap: 240px;
+    gap: 12em;
 }
 
 a {
@@ -35,11 +35,13 @@ ul {
     list-style-type: none;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin: 0;
 }
 
-#text-colored li a, .info-dessert-preview {
+#text-colored li a,
+.info-dessert-preview {
     color: $color-main;
 }
 
@@ -80,7 +82,7 @@ nav ul li a {
     margin: 0 5em;
     font-weight: 300;
     font-size: 18px;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 .text-colored {
@@ -142,7 +144,7 @@ nav ul li a {
     font-family: $font-serif;
     font-weight: 700;
     font-size: 30px;
-    margin: 0 .5em;
+    margin: 0 0.5em;
 }
 
 .description-dessert-preview {
@@ -175,7 +177,7 @@ nav ul li a {
 }
 
 .title-chef {
-    margin: .5em 0;
+    margin: 0.5em 0;
     padding-right: 6em;
     font-family: $font-serif;
     font-size: 80px;
@@ -204,7 +206,7 @@ nav ul li a {
 }
 
 .dessert {
-    background-color: #FEFCF6;
+    background-color: #fefcf6;
     display: flex;
     flex-direction: row;
     gap: 2em;
@@ -227,7 +229,7 @@ nav ul li a {
 .title-desserts {
     font-family: $font-serif;
     font-size: 80px;
-    margin: .5em 0;
+    margin: 0.5em 0;
 }
 
 .description-desserts {
@@ -244,7 +246,7 @@ nav ul li a {
 }
 
 .dessert-nutritions {
-    background-color: #F9E8DC;
+    background-color: #f9e8dc;
     border-radius: 24px;
     margin: 1em;
     padding: 2em 4em;
@@ -261,7 +263,7 @@ nav ul li a {
 .nutrition-name {
     text-transform: uppercase;
     font-size: 12px;
-    color: #6E6E6E;
+    color: #6e6e6e;
 }
 
 .nutrition-amount {
@@ -274,7 +276,7 @@ nav ul li a {
 .extra-info-desserts {
     margin-top: 2em;
     padding: 2em;
-    background-color: #F9EECD;
+    background-color: #f9eecd;
     display: flex;
     flex-direction: row;
     width: 96.5%;
@@ -314,7 +316,7 @@ nav ul li a {
     padding: 4em 0;
     margin: 0 -2em;
     margin-bottom: 4em;
-    background-color: #FBF4DF;
+    background-color: #fbf4df;
 }
 
 .title-questions {
@@ -322,7 +324,7 @@ nav ul li a {
     font-size: 80px;
     margin: 0 4em;
     text-align: center;
-    margin-bottom: .75em;
+    margin-bottom: 0.75em;
 }
 
 .description-questions {
@@ -337,7 +339,7 @@ nav ul li a {
 
 .info-name {
     font-size: 16px;
-    color: #6E6E6E;
+    color: #6e6e6e;
 }
 
 .info-value {
@@ -347,7 +349,7 @@ nav ul li a {
 }
 
 #form-question {
-    background-color: #F9EECD;
+    background-color: #f9eecd;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -357,7 +359,8 @@ nav ul li a {
     font-weight: 600;
 }
 
-input, textarea {
+input,
+textarea {
     border-radius: 8px;
     border: none;
     padding-left: 1em;
@@ -390,7 +393,7 @@ textarea {
 
 .in-media {
     font-size: 11px;
-    color: #1E1E1E;
+    color: #1e1e1e;
     text-transform: uppercase;
 }
 
@@ -418,11 +421,11 @@ textarea {
 
 .source {
     font-size: 13px;
-    color: #1E1E1E;
+    color: #1e1e1e;
 }
 
 .impression {
-    color: #1E1E1E;
+    color: #1e1e1e;
 }
 
 footer {
@@ -431,7 +434,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #3D3D3D;
+    color: #3d3d3d;
 }
 
 footer img {
@@ -455,9 +458,114 @@ footer img {
 
 #text-footer li a {
     font-weight: bold;
-    color: #3D3D3D;
+    color: #3d3d3d;
 }
 
 .copyright {
     font-size: 12px;
+}
+
+@media only screen and (max-width: 1300px) {
+    nav {
+        gap: 2em;
+    }
+    nav ul {
+        padding: 0 1em;
+    }
+    #description {
+        margin: 0 10vw;
+    }
+    #desserts-preview {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4em;
+    }
+    #chef {
+        margin-left: 4em;
+    }
+    .title-chef {
+        padding-right: 2em;
+    }
+    .dessert {
+        padding: 0;
+        gap: 1em;
+    }
+    .dessert-nutritions {
+        padding: 1em 2em;
+    }
+    .article {
+        margin: 4em;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .dessert {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 8em;
+    }
+    .dessert-nutritions {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25em;
+    }
+    nav ul {
+        gap: 0.25em;
+        flex-direction: column;
+    }
+    #chef {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #desserts-preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8em;
+    }
+    .info-questions {
+        gap: 2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #desserts-preview {
+        display: flex;
+        flex-direction: column;
+    }
+    .extra-info-desserts {
+        flex-direction: column;
+    }
+    #reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .description-questions {
+        margin: 2em 4em;
+        text-align: center;
+    }
+    .info-questions {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-footer {
+        gap: 0;
+        flex-direction: column;
+    }
+    #text-footer {
+        gap: 0.5em;
+        flex-direction: column;
+        text-align: center;
+    }
 }
