@@ -17,10 +17,10 @@ async function submitQuestion(event) {
     const question = document.getElementById("question");
 
     const requestBody = {
-        full_name: name,
-        phone_number: number,
-        email: email,
-        question: question,
+        full_name: name.value,
+        phone_number: number.value,
+        email: email.value,
+        question: question.value,
     };
 
     const httpHeaders = {
@@ -30,6 +30,7 @@ async function submitQuestion(event) {
 
     await fetch(`${serverURL}/form_submissions`, httpHeaders)
         .then(() => {
+            console.log(httpHeaders.body);
             name.value = "";
             number.value = "";
             email.value = "";
