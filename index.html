@@ -147,12 +147,12 @@
             <nav>
                 <picture><img src="/fonts/krystallino-logo.svg" /></picture>
                 <ul id="text-colored">
-                    <li><a href="#desserts">Нашите десерти</a></li>
+                    <li><a href="#desserts-preview">Нашите десерти</a></li>
                     <li><a href="#reviews">Отзиви</a></li>
                     <li>
                         <a href="#questions">За поръчки и запитвания</a>
                     </li>
-                    <li><a href="#reccommendation">Препоръки</a></li>
+                    <li><a href="#desserts">Препоръки</a></li>
                     <li><a href="#media">Медиите за нас</a></li>
                     <li><a href="#contacts">Контакти</a></li>
                 </ul>
@@ -265,15 +265,11 @@
                             <p class="info-name">Телефон:</p>
                             <p class="info-value">+359 (899) 456-7890</p>
                         </div>
-                        <form
-                            action="http://localhost:4000/form_submissions"
-                            method="post"
-                            id="form-question"
-                        >
+                        <form id="form-question">
                             <label>Вашите имена</label>
                             <input
-                                name="names"
-                                id="names"
+                                name="name"
+                                id="name"
                                 type="text"
                                 placeholder="Placeholder"
                             />
@@ -298,84 +294,97 @@
                                 placeholder="Placeholder"
                                 form="form-question"
                             ></textarea>
-                            <button type="submit" class="btn-primary btn-form">
+                            <button class="btn-primary btn-form">
                                 Направи заявка
                             </button>
                         </form>
                     </div>
                 </section>
-                <section id="media">
-                    <h1 class="title-questions">В медиите</h1>
-                    <picture><img src="./divider.svg" /></picture>
-                    <article class="article">
-                        <span>
-                            <p class="in-media">В медиите:</p>
-                            <h2 class="title-article">
-                                Krystallino: Предефиниране на иновациите в
-                                десерта
-                            </h2>
+                <div class="bg-img">
+                    <section id="media">
+                        <h1 class="title-questions">В медиите</h1>
+                        <picture><img src="./divider.svg" /></picture>
+                        <article class="article">
+                            <span>
+                                <p class="in-media">В медиите:</p>
+                                <h2 class="title-article">
+                                    Krystallino: Предефиниране на иновациите в
+                                    десерта
+                                </h2>
+                            </span>
+                            <p class="source">
+                                Източник: сп. Кулинарни изкушения
+                            </p>
+                            <p class="impression">
+                                Krystallino, ръководен от известния сладкар
+                                Кристалин Илчев, революционизира десертната
+                                сцена с иновативните си творения. От
+                                кремообразното кисело мляко, орехи и меден
+                                десерт до неочакваното съчетание на бекон и
+                                боровинки, всяко лакомство е щателно изработено,
+                                за да измами вкусовите пъпки и да разшири
+                                границите на вкуса. С фокус върху качествените
+                                съставки и вниманието към детайла, Krystallino
+                                продължава да завладява публиката и да
+                                предефинира иновациите в десертите.
+                            </p>
+                            <button class="btn btn-primary">
+                                Прочети статията
+                            </button>
+                        </article>
+                        <article class="article">
+                            <span>
+                                <p class="in-media">В медиите:</p>
+                                <h2 class="title-article">
+                                    Krystallino: A Sweet Success Story
+                                </h2>
+                            </span>
+                            <p class="source">
+                                Източник: сп. Кулинарни изкушения
+                            </p>
+                            <p class="impression">
+                                Страстта на главния готвач Кристалин Илчев към
+                                сладкишите доведе до създаването на Krystallino,
+                                марка, известна със своята креативност и
+                                артистичност в приготвянето на десерти. С
+                                нарастваща база от фенове и разширяващо се меню
+                                от декадентски изкушения, Krystallino прави
+                                вълни в кулинарния свят. Отдадеността на главния
+                                готвач Кристалин на качеството и желанието й да
+                                предизвиква радост с всяка хапка затвърдиха
+                                мястото на Krystallino като сладка история на
+                                успеха в света на десертите.
+                            </p>
+                            <button class="btn btn-primary">
+                                Прочети статията
+                            </button>
+                        </article>
+                    </section>
+                    <footer id="contacts">
+                        <picture><img src="./walnut.svg" /></picture>
+                        <picture
+                            ><img src="./fonts/krystallino-logo.svg"
+                        /></picture>
+                        <span class="info-footer">
+                            <p>info@krystallino.com</p>
+                            <p>+359 (899) 456-7890</p>
                         </span>
-                        <p class="source">Източник: сп. Кулинарни изкушения</p>
-                        <p class="impression">
-                            Krystallino, ръководен от известния сладкар
-                            Кристалин Илчев, революционизира десертната сцена с
-                            иновативните си творения. От кремообразното кисело
-                            мляко, орехи и меден десерт до неочакваното
-                            съчетание на бекон и боровинки, всяко лакомство е
-                            щателно изработено, за да измами вкусовите пъпки и
-                            да разшири границите на вкуса. С фокус върху
-                            качествените съставки и вниманието към детайла,
-                            Krystallino продължава да завладява публиката и да
-                            предефинира иновациите в десертите.
+                        <ul id="text-footer">
+                            <li><a href="#desserts-preview">Нашите десерти</a></li>
+                            <li><a href="#reviews">Отзиви</a></li>
+                            <li>
+                                <a href="#questions">За поръчки и запитвания</a>
+                            </li>
+                            <li><a href="#desserts">Препоръки</a></li>
+                            <li><a href="#media">Медиите за нас</a></li>
+                            <li><a href="#contacts">Контакти</a></li>
+                        </ul>
+                        <p class="copyright">
+                            Правила и условия | Политика за поверителност |
+                            Copyright © 2024 Krystallino. Всички права запазени.
                         </p>
-                        <button class="btn btn-primary">
-                            Прочети статията
-                        </button>
-                    </article>
-                    <article class="article">
-                        <span>
-                            <p class="in-media">В медиите:</p>
-                            <h2 class="title-article">
-                                Krystallino: A Sweet Success Story
-                            </h2>
-                        </span>
-                        <p class="source">Източник: сп. Кулинарни изкушения</p>
-                        <p class="impression">
-                            Страстта на главния готвач Кристалин Илчев към
-                            сладкишите доведе до създаването на Krystallino,
-                            марка, известна със своята креативност и
-                            артистичност в приготвянето на десерти. С нарастваща
-                            база от фенове и разширяващо се меню от декадентски
-                            изкушения, Krystallino прави вълни в кулинарния
-                            свят. Отдадеността на главния готвач Кристалин на
-                            качеството и желанието й да предизвиква радост с
-                            всяка хапка затвърдиха мястото на Krystallino като
-                            сладка история на успеха в света на десертите.
-                        </p>
-                        <button class="btn btn-primary">
-                            Прочети статията
-                        </button>
-                    </article>
-                </section>
-                <footer>
-                    <picture><img src="./walnut.svg"></picture>
-                    <picture><img src="./fonts/krystallino-logo.svg"></picture>
-                    <span class="info-footer">
-                        <p>info@krystallino.com</p>
-                        <p>+359 (899) 456-7890 </p>
-                    </span>
-                    <ul id="text-footer">
-                        <li><a href="#desserts">Нашите десерти</a></li>
-                        <li><a href="#reviews">Отзиви</a></li>
-                        <li>
-                            <a href="#questions">За поръчки и запитвания</a>
-                        </li>
-                        <li><a href="#reccommendation">Препоръки</a></li>
-                        <li><a href="#media">Медиите за нас</a></li>
-                        <li><a href="#contacts">Контакти</a></li>
-                    </ul>
-                    <p class="copyright">Правила и условия | Политика за поверителност | Copyright © 2024 Krystallino. Всички права запазени.</p>
-                </footer>
+                    </footer>
+                </div>
             </main>
         </div>
 

@@ -1,10 +1,48 @@
 const serverURL = "http://localhost:4000";
 const dessertsPreview = document.getElementById("desserts-preview");
 const dessertsSection = document.getElementById("desserts-display");
+const submitBtn = document.getElementsByClassName("btn-form")[0];
 
 document.addEventListener("DOMContentLoaded", await getDesserts());
+submitBtn.addEventListener("click", submitQuestion);
 
-async function getDesserts() {
+async function submitQuestion(event) {
+    if (event) {
+        event.preventDefault();
+    }
+
+    const name = document.getElementById("name");
+    const number = document.getElementById("number");
+    const email = document.getElementById("email");
+    const question = document.getElementById("question");
+
+    const requestBody = {
+        full_name: name,
+        phone_number: number,
+        email: email,
+        question: question,
+    };
+
+    const httpHeaders = {
+        method: "POST",
+        body: JSON.stringify(requestBody),
+    };
+
+    await fetch(`${serverURL}/form_submissions`, httpHeaders)
+        .then(() => {
+            name.value = "";
+            number.value = "";
+            email.value = "";
+            question.value = "";
+        })
+        .catch(() => alert("Something went wrong"));
+}
+
+async function getDesserts(event) {
+    if (event) {
+        event.preventDefault();
+    }
+
     await fetch(`${serverURL}/desserts`)
         .then((desserts) => desserts.json())
         .then((desserts) => {
@@ -13,7 +51,7 @@ async function getDesserts() {
                 addDessertFull(dessert);
             }
         })
-        .catch(() => alert('Something went wrong!'));
+        .catch(() => alert("Something went wrong!"));
 }
 
 function addDessertShort(dessert) {

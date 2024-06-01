@@ -14,7 +14,7 @@ body {
 
 main {
     background-image: url("/main-bg.svg");
-    background-repeat: space;
+    background-repeat: no-repeat;
     background-position: center 33em;
     background-size: 100%;
 }
@@ -463,6 +463,22 @@ footer img {
 
 .copyright {
     font-size: 12px;
+}
+
+.bg-img {
+    background-image: url("/main-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center 64em;
+}
+
+@media only screen and (max-width: 1500px) {
+    #desserts-preview {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #chef {
+        margin-left: 4em;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
