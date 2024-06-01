@@ -1,1 +1,95 @@
 // Продължи с твоя SCSS или обикновен CSS код тук.
+$color-light: #FDF6E6;
+$color-main: #9B582E;
+$color-secondary: #CA7111;
+$color-alt: #533019;
+
+body {
+    background-color: $color-light;
+}
+
+nav {
+    display: flex;
+    width: 97.5vw;
+    margin: 1em 2em;
+    padding: 0;
+    gap: 240px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    padding: 0 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: $color-main;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#description {
+    width: inherit;
+    margin: 0 20vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+#description h1 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+}
+
+#description p {
+    margin: 0 5em;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26.1px
+}
+
+.text-colored {
+    color: $color-main;
+}
+
+.text-alt {
+    color: $color-alt;
+}
+
+#description-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75em;
+}
+
+.btn {
+    border: none;
+    border-radius: 32px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    color: $color-light;
+    background-color: $color-main;
+}
+
+.btn-secondary {
+    color: $color-secondary;
+    background-color: $color-light;
+    border: 1px solid $color-secondary;
+}
