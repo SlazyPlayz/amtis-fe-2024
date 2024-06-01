@@ -63,13 +63,13 @@ function addDessertShort(dessert) {
 
     const picture = document.createElement("picture");
     const picImg = document.createElement("img");
-    picImg.src = `/${image}`;
+    picImg.src = `./images/${image}`;
     picImg.className = "img-dessert-preview";
     picture.appendChild(picImg);
 
     const divider = document.createElement("picture");
     const dividerImg = document.createElement("img");
-    dividerImg.src = `/divider.svg`;
+    dividerImg.src = `./images/divider.svg`;
     divider.appendChild(dividerImg);
 
     const txt = document.createElement("div");
@@ -108,7 +108,7 @@ function addDessertFull(dessert) {
 
     const picture = document.createElement("picture");
     const picImg = document.createElement("img");
-    picImg.src = `/${image}`;
+    picImg.src = `/images/${image}`;
     picImg.className = "img-dessert";
     picture.appendChild(picImg);
 
