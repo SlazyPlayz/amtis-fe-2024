@@ -145,68 +145,238 @@
     <body>
         <div id="app">
             <nav>
-                <picture
-                    ><img src="/public/fonts/krystallino-logo.svg"
-                /></picture>
+                <picture><img src="/fonts/krystallino-logo.svg" /></picture>
                 <ul id="text-colored">
-                    <li><a href="/desserts">Нашите десерти</a></li>
-                    <li><a href="/reviews">Отзиви</a></li>
+                    <li><a href="#desserts">Нашите десерти</a></li>
+                    <li><a href="#reviews">Отзиви</a></li>
                     <li>
-                        <a href="/orders-questions">За поръчки и запитвания</a>
+                        <a href="#questions">За поръчки и запитвания</a>
                     </li>
-                    <li><a href="/reccommendation">Препоръки</a></li>
-                    <li><a href="/media-impression">Медиите за нас</a></li>
-                    <li><a href="/contacts">Контакти</a></li>
+                    <li><a href="#reccommendation">Препоръки</a></li>
+                    <li><a href="#media">Медиите за нас</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
                 </ul>
             </nav>
 
             <main>
-                <div class="main-bg">
-                    <section id="description">
-                        <h1 class="text-colored">
-                            Десерти Kristallino – където
-                            <span class="text-alt">изкуството</span> среща
-                            <span class="text-alt">десерта</span>.
-                        </h1>
-                        <p>
-                            Отдайте се на нашите изящни творения, изработени със
-                            страст и прецизност от световноизвестния сладкар
-                            Кристалин Илиев. Разгледайте нашите иновативни
-                            десерти, които обещават да измамят вкусовите ви
-                            рецептори и да запалят сетивата ви.
+                <section id="description">
+                    <h1 class="text-colored">
+                        Десерти Kristallino – където
+                        <span class="text-alt">изкуството</span> среща
+                        <span class="text-alt">десерта</span>.
+                    </h1>
+                    <p>
+                        Отдайте се на нашите изящни творения, изработени със
+                        страст и прецизност от световноизвестния сладкар
+                        Кристалин Илиев. Разгледайте нашите иновативни десерти,
+                        които обещават да измамят вкусовите ви рецептори и да
+                        запалят сетивата ви.
+                    </p>
+                    <div id="description-buttons">
+                        <button class="btn btn-primary">Направи заявка</button>
+                        <button class="btn btn-secondary">Научи повече</button>
+                    </div>
+                </section>
+                <section id="desserts-preview"></section>
+                <section id="chef">
+                    <picture><img src="/chef.svg" /></picture>
+                    <div class="info-chef">
+                        <h1 class="title-chef">Chef Кристалин</h1>
+                        <picture><img src="/divider.svg" /></picture>
+                        <p class="description-chef">
+                            Шеф Кристалин Илиев е световноизвестен сладкар,
+                            известен със своите иновативни и артистични творения
+                            на десерти. С повече от две десетилетия опит, той
+                            съчетава традиционни техники с модерни вкусове,
+                            завладявайки кулинарния свят чрез своята марка
+                            Krystallino. Уникалните десерти на шеф Кристалин,
+                            като кисело мляко с орехи и мед или бекон с
+                            боровинки, отразяват неговата отдаденост на
+                            качеството и креативността, спечелвайки й
+                            международно признание и лоялни последователи.
                         </p>
-                        <div id="description-buttons">
-                            <button class="btn btn-primary">
+                    </div>
+                </section>
+                <section id="desserts">
+                    <h1 class="title-desserts">Десерти</h1>
+                    <picture><img src="/divider.svg" /></picture>
+                    <p class="description-desserts">
+                        внимателно селектирани вкусове
+                    </p>
+                    <div class="desserts-display" id="desserts-display"></div>
+                    <div class="extra-info-desserts">
+                        <p>
+                            Ако имате интерес към нашите вкусове можете да се
+                            свържете с нас , за да уточним цени, методи на
+                            достава и условия за съхранение.
+                        </p>
+                        <button class="btn btn-primary">Направи заявка</button>
+                    </div>
+                </section>
+                <section id="reviews">
+                    <article>
+                        <h1 class="title-reviews">Отзиви от клиенти</h1>
+                        <picture><img src="./divider.svg" /></picture>
+                    </article>
+                    <article class="user-reviews">
+                        <p class="author-review">Майкъл Томпсън – ⭐⭐⭐⭐⭐</p>
+                        <p>
+                            „Имах удоволствието да опитам десерта с ягоди и
+                            босилек и той надмина всички очаквания. Свежестта на
+                            ягодите, съчетана с фината нотка на босилек, беше
+                            истинско откровение. Нямам търпение да поръчайте
+                            отново!"
+                        </p>
+                        <p class="author-review">Емили Чен - ⭐⭐⭐⭐⭐</p>
+                        <p>
+                            "Десертът с хрупкави слънчогледови семки на
+                            Krystallino беше възхитителна изненада! Хрупкавостта
+                            на слънчогледовите семки, комбинирана с
+                            кремообразната основа, беше перфектна хармония от
+                            вкусове и текстури. Наистина трябва да опитате!"
+                        </p>
+                        <p class="author-review">
+                            Дейвид Мартинез - ⭐⭐⭐⭐⭐
+                        </p>
+                        <p>
+                            "Бях заинтригуван от десерта с бекон и боровинки и
+                            той не ме разочарова! Пикантният бекон се съчетаваше
+                            изненадващо добре със сладостта на боровинките,
+                            създавайки уникално и запомнящо се десертно
+                            изживяване."
+                        </p>
+                    </article>
+                </section>
+                <section id="questions">
+                    <h1 class="title-questions">Запитвания и заявки</h1>
+                    <picture><img src="./divider.svg" /></picture>
+                    <p class="description-questions">
+                        За да направите поръчка или запитване за нашите десерти,
+                        моля свържете се с нас на:
+                    </p>
+                    <div class="info-questions">
+                        <div>
+                            <p class="info-name">Имейл:</p>
+                            <p class="info-value">info@krystallino.com</p>
+                            <p class="info-name">Адрес:</p>
+                            <p class="info-value">
+                                123 Вкусната улица, Девин, България
+                            </p>
+                            <p class="info-name">Телефон:</p>
+                            <p class="info-value">+359 (899) 456-7890</p>
+                        </div>
+                        <form
+                            action="http://localhost:4000/form_submissions"
+                            method="post"
+                            id="form-question"
+                        >
+                            <label>Вашите имена</label>
+                            <input
+                                name="names"
+                                id="names"
+                                type="text"
+                                placeholder="Placeholder"
+                            />
+                            <label>Телефон за връзка</label>
+                            <input
+                                name="number"
+                                id="number"
+                                type="text"
+                                placeholder="Placeholder"
+                            />
+                            <label>Имейл за контакти</label>
+                            <input
+                                name="email"
+                                id="email"
+                                type="text"
+                                placeholder="Placeholder"
+                            />
+                            <label>Вашият въпрос или заявка</label>
+                            <textarea
+                                name="question"
+                                id="question"
+                                placeholder="Placeholder"
+                                form="form-question"
+                            ></textarea>
+                            <button type="submit" class="btn-primary btn-form">
                                 Направи заявка
                             </button>
-                            <button class="btn btn-secondary">
-                                Научи повече
-                            </button>
-                        </div>
-                    </section>
-                    <section id="desserts">
-                        <article class="dessert">
-                            <picture>
-                                <img
-                                    src="/public/strawberry-and-basil.svg"
-                                    class="img-dessert"
-                                />
-                            </picture>
-                            <picture>
-                                <img src="./public/dessert-title-divider.svg" />
-                            </picture>
-                            <div class="txt-dessert">
-                                <h1 class="title-dessert">Ягоди и босилек</h1>
-                                <p class="description-dessert">
-                                    Отпразнувайте същността на лятото със зрели
-                                    ягоди, съчетани с ароматен босилек,
-                                    освежаващо удоволствие за небцето.
-                                </p>
-                            </div>
-                            <a href="#">НАУЧЕТЕ ПОВЕЧЕ</a>
-                        </article>
-                    </section>
-                </div>
+                        </form>
+                        <!-- add alert on failure -->
+                    </div>
+                </section>
+                <section id="media">
+                    <h1 class="title-questions">В медиите</h1>
+                    <picture><img src="./divider.svg" /></picture>
+                    <article class="article">
+                        <span>
+                            <p class="in-media">В медиите:</p>
+                            <h2 class="title-article">
+                                Krystallino: Предефиниране на иновациите в
+                                десерта
+                            </h2>
+                        </span>
+                        <p class="source">Източник: сп. Кулинарни изкушения</p>
+                        <p class="impression">
+                            Krystallino, ръководен от известния сладкар
+                            Кристалин Илчев, революционизира десертната сцена с
+                            иновативните си творения. От кремообразното кисело
+                            мляко, орехи и меден десерт до неочакваното
+                            съчетание на бекон и боровинки, всяко лакомство е
+                            щателно изработено, за да измами вкусовите пъпки и
+                            да разшири границите на вкуса. С фокус върху
+                            качествените съставки и вниманието към детайла,
+                            Krystallino продължава да завладява публиката и да
+                            предефинира иновациите в десертите.
+                        </p>
+                        <button class="btn btn-primary">
+                            Прочети статията
+                        </button>
+                    </article>
+                    <article class="article">
+                        <span>
+                            <p class="in-media">В медиите:</p>
+                            <h2 class="title-article">
+                                Krystallino: A Sweet Success Story
+                            </h2>
+                        </span>
+                        <p class="source">Източник: сп. Кулинарни изкушения</p>
+                        <p class="impression">
+                            Страстта на главния готвач Кристалин Илчев към
+                            сладкишите доведе до създаването на Krystallino,
+                            марка, известна със своята креативност и
+                            артистичност в приготвянето на десерти. С нарастваща
+                            база от фенове и разширяващо се меню от декадентски
+                            изкушения, Krystallino прави вълни в кулинарния
+                            свят. Отдадеността на главния готвач Кристалин на
+                            качеството и желанието й да предизвиква радост с
+                            всяка хапка затвърдиха мястото на Krystallino като
+                            сладка история на успеха в света на десертите.
+                        </p>
+                        <button class="btn btn-primary">
+                            Прочети статията
+                        </button>
+                    </article>
+                </section>
+                <footer>
+                    <picture><img src="./walnut.svg"></picture>
+                    <picture><img src="./fonts/krystallino-logo.svg"></picture>
+                    <span class="info-footer">
+                        <p>info@krystallino.com</p>
+                        <p>+359 (899) 456-7890 </p>
+                    </span>
+                    <ul id="text-footer">
+                        <li><a href="#desserts">Нашите десерти</a></li>
+                        <li><a href="#reviews">Отзиви</a></li>
+                        <li>
+                            <a href="#questions">За поръчки и запитвания</a>
+                        </li>
+                        <li><a href="#reccommendation">Препоръки</a></li>
+                        <li><a href="#media">Медиите за нас</a></li>
+                        <li><a href="#contacts">Контакти</a></li>
+                    </ul>
+                    <p class="copyright">Правила и условия | Политика за поверителност | Copyright © 2024 Krystallino. Всички права запазени.</p>
+                </footer>
             </main>
         </div>
 
